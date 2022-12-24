@@ -37,7 +37,7 @@ var ctx = document.getElementById("myAreaChart");
 var myLineChart = new Chart(ctx, {
   type: 'line',
   data: {
-    labels: ["Year 1 Semester 1", "Year 1 Semester 2", "Year 2 Semester 1", "Year 2 Semester 2"],
+    labels: ["Year 1 Semester 1", "Year 1 Semester 2", "Year 2 Semester 1"],
     datasets: [{
       label: "GPA",
       lineTension: 0.3,
@@ -51,7 +51,7 @@ var myLineChart = new Chart(ctx, {
       pointHoverBorderColor: "rgba(78, 115, 223, 1)",
       pointHitRadius: 10,
       pointBorderWidth: 2,
-      data: [3.41,3.41,3.33,3.33],
+      data: [3.41,3.41,3.33],
     }],
   },
   options: {
@@ -67,7 +67,7 @@ var myLineChart = new Chart(ctx, {
     scales: {
       xAxes: [{
         time: {
-          unit: 'date'
+          unit: 'text'
         },
         gridLines: {
           display: false,
